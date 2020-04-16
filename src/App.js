@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+import Pages from './Pages';
+import { useDispatch } from 'react-redux';
+import userActions from './Redux/Actions/userActions';
+import bookActions from './Redux/Actions/bookActions';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(userActions.persistUserFromAPI());
+    dispatch(bookActions.getBooksFromAPI());
+  }, [dispatch]);
+
+  return <Pages />;
 }
 
 export default App;

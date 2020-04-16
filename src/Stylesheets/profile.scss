@@ -1,0 +1,38 @@
+@import 'colors.scss';
+
+.profile-page {
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20% 80%;
+  .user-data {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #profile-donations-container,
+  #profile-purchases-container {
+    height: 100%;
+    flex-direction: column;
+    // justify-content: center;
+    a {
+      height: fit-content;
+      .book-deets {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        h2 {
+          margin: 0.5ch 0;
+        }
+      }
+    }
+  }
+  #profile-donations-container {
+    background-color: $domino;
+  }
+  #profile-purchases-container {
+    background-color: $hurricane;
+  }
+}

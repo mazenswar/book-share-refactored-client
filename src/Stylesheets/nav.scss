@@ -1,0 +1,12 @@
+@import 'colors.scss';
+
+nav {
+  background-color: $desertStorm;
+  padding: 2ch;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10%;
+  font-size: 2ch;
+  font-weight: 400;
+}

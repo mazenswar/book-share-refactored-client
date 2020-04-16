@@ -1,0 +1,27 @@
+@import 'colors.scss';
+
+.confirmation-page {
+  display: flex;
+  //   flex-direction: column;
+  text-align: center;
+  margin: auto;
+  //   justify-self: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 30%;
+  width: 100%;
+  h3 {
+    width: 100%;
+  }
+  button {
+    width: 10ch;
+    height: 10ch;
+    margin: 2ch;
+    border-radius: 100%;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

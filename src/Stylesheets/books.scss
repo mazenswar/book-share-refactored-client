@@ -1,0 +1,40 @@
+@import 'colors.scss';
+
+.home-results {
+  // background-color: red;
+  transition: 0.5s;
+  height: 65%;
+  flex-direction: column;
+  align-items: flex-start;
+  .list-item {
+    margin: 1ch 0;
+    height: fit-content;
+  }
+  h1 {
+    align-self: center;
+  }
+}
+
+.home-inputs-container {
+  background-color: $hurricane;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    // width: 100%;
+  }
+  input[type='text'] {
+    width: 40%;
+    margin: 2% 20%;
+    font-size: 2ch;
+    padding: 1ch;
+  }
+
+  label,
+  input[type='checkbox'] {
+    padding: 0 1ch;
+  }
+}

@@ -1,0 +1,83 @@
+@import 'colors.scss';
+// .query-results {
+
+// }
+.donation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 95%;
+  width: 100%;
+  transition: 0.7s;
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 30vh;
+    input {
+      width: 50%;
+      padding: 1ch;
+      font-size: 2ch;
+    }
+    button {
+      padding: 2ch 4ch;
+      background-color: $desertStorm;
+      color: $corduroy;
+      font-weight: 600;
+      transition: 0.5s;
+      border: none;
+      &:hover {
+        color: $desertStorm;
+        background-color: $corduroy;
+        border-radius: 10ch;
+      }
+    }
+  }
+}
+
+.query-results {
+  height: 70vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  background-color: $corduroy;
+  padding: 1ch 0;
+  .query-result,
+  .list-item {
+    width: fit-content;
+    .book-deets {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      h2 {
+        margin: 0.5ch 0;
+      }
+    }
+    .isbn-container {
+      display: flex;
+      width: 50%;
+      margin: 0 5ch;
+      justify-content: space-evenly;
+    }
+    background-color: $desertStorm;
+    color: $corduroy;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0 40px 40px 0;
+    margin: 0.5ch 0;
+    overflow: hidden;
+    height: 20%;
+    padding: 0 5ch;
+    transition: 0.7s;
+    img {
+      height: 90%;
+      margin-right: 5ch;
+    }
+  }
+}
